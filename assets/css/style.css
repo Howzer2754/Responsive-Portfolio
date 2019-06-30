@@ -1,0 +1,244 @@
+/*RESET - removes spaces*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 50px;
+}
+body {
+    background-color: #DCDCDC;
+    background
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0;
+    display: flex;
+}
+.bio {
+    background-color: blanchedalmond;
+    padding: 5%;
+}
+.para {
+    padding: 2%;
+}
+
+/* Profile Picture */
+.profilepic {
+    float: left;
+    width: 15%;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* Header & Nav Bar */
+header {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    background-color: #000;
+}
+
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.name  {
+    align-items: flex-start;
+    padding: 20px;
+    color: #fff;
+}
+.me {
+    text-align: left;
+    padding: 2%;
+}
+li a {
+    display: inline;
+    float: right;
+}
+ul {
+    text-align: right;
+    width: 100%;
+    float: right;
+    margin: auto;
+}
+
+ footer {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: #000;
+  position: sticky fixed;
+  }
+
+  small {
+    color: #fff;
+  }
+
+.bio {
+    border: 1px solid #D3D3D3;
+    background-color: #f7e2b7;
+    height: 200vh;
+}
+.nav {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2%;
+  }
+  .nav li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+  }
+  .nav li:last-child {
+    margin-right: 0;
+  }
+.footNav a {
+    color: rgb(250, 245, 245);
+    justify-content: flex-end;
+    position: relative;
+}
+.headNav a {
+    color: rgb(250, 245, 245);
+    align-items: flex-end;
+    position: relative;
+
+}
+a {
+    color: #648880;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #a9b2b9;
+  }
+
+/* CONTACT FORM */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .form {
+    /* border-radius: 5px; */
+    background-color: blanchedalmond;
+    padding: 20px;
+    width: 100%;
+    height: 120vh;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* GOOGLE MAPS */
+  .location {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .maps {
+      width: 100%;
+      padding: 2%;
+      justify-content: center;
+      display: block;
+      margin: auto;
+      padding-bottom: 0;
+  }
+
+  #gmap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    position: inherit;
+  }
+
+  /* PORTFOLIO */
+  .portfolio {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    background-color: blanchedalmond;
+    height: 200vh;
+    padding-top: 5%;
+}
+
+.portimg {
+    position: relative;
+    flex-grow: 1;
+    padding: 3.5%;
+}
+
+.portdcrp1 {
+  position: absolute sticky;
+  bottom: 56%;
+  width: 299px;
+  text-align: center;
+  background-color: #515254;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: inherit;
+}
+
+.portdcrp2 {
+  position: absolute sticky;
+  bottom: 56%;
+  width: 299px;
+  text-align: center;
+  background-color: #515254;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: inherit;
+}
+.port-description {
+  width: 299px;
+  padding-top: 10%;
+}
+
+/* TYPOGRAPHY */
+.name {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.bio {
+  font-size: 20px;
+  word-spacing: 3px;
+  line-height: 30px;
+}
