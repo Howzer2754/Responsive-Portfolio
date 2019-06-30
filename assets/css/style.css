@@ -185,7 +185,7 @@ input[type=text], select, textarea {
 
   /* PORTFOLIO */
   .portfolio {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
@@ -241,4 +241,74 @@ input[type=text], select, textarea {
   font-size: 20px;
   word-spacing: 3px;
   line-height: 30px;
+}
+
+/* MEDIA QUERIES */
+/* 980px */
+@media (max-width: 980px) {
+.bio {
+  margin-right: 200px;
+  }
+.portfolio {
+  margin-right: 200px;
+  }
+.form {
+  margin-right: 200px;
+ }
+}
+/* 768px */
+@media (max-width: 768px) {
+  .name {
+    font-size: 20px;
+  }
+  div.bio {
+    margin-right: 0;
+  }
+  .portfolio {
+    margin-right: 0;
+  }
+  div.portimg {
+    width: 50%;
+  }
+  .name {
+    float: left;
+  }
+  nav.headNav {
+    padding-top: 2.5%;
+  }
+  .form {
+    margin-right: 0;
+   }
+}
+/* 640px */
+@media (max-width: 640px) {
+  header {
+    position: static;
+  }
+  .profilepic {
+    float: none;
+    width: 100%;
+    border-radius: 0;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+  .name {
+    padding-left: 30%;
+  }
+  .headNav {
+    padding-left: 30%;
+  }
+  div.portfolio {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400vh;
+    width: 100%;
+  }
+  div.portimg {
+    width: 100%;
+    padding-left: 22%;
+}
+ul {
+  display: block;
 }
