@@ -177,7 +177,6 @@ input[type=text], select, textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 5%;
     position: inherit;
   }
 
@@ -189,7 +188,7 @@ input[type=text], select, textarea {
     flex-direction: row;
     justify-content: left;
     background-color: blanchedalmond;
-    height: 200vh;
+    height: 300vh;
     padding-top: 5%;
 }
 
@@ -243,6 +242,7 @@ input[type=text], select, textarea {
 }
 
 /* MEDIA QUERIES */
+
 /* 980px */
 @media (max-width: 980px) {
 .bio {
@@ -253,8 +253,10 @@ input[type=text], select, textarea {
   }
 div.form {
   margin-right: 200px;
+  margin-left: 0;
  }
 }
+
 /* 768px */
 @media (max-width: 768px) {
   .name {
@@ -264,10 +266,13 @@ div.form {
     margin-right: 0;
   }
   .portfolio {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     margin-right: 0;
   }
   div.portimg {
-    width: 100%;
+    margin-right: 50px;
   }
   .name {
     float: left;
@@ -279,6 +284,7 @@ div.form {
     margin-right: 0;
    }
 }
+
 /* 640px */
 @media (max-width: 640px) {
   header {
@@ -302,7 +308,7 @@ div.form {
     padding-left: 70px;
   }
   div.portfolio {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     height: 400vh;
     width: 100%;
@@ -313,5 +319,8 @@ div.form {
   }
   div.form {
     margin-left: 0px;
+  }
+  p {
+    font-size: 22px;
   }
 }
