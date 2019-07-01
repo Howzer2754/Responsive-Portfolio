@@ -17,10 +17,6 @@ body {
     margin-left: 0;
     display: flex;
 }
-.bio {
-    background-color: blanchedalmond;
-    padding: 5%;
-}
 .para {
     padding: 2%;
 }
@@ -85,8 +81,12 @@ ul {
 
 .bio {
     border: 1px solid #D3D3D3;
-    background-color: #f7e2b7;
+    background-color: blanchedalmond;
     height: 200vh;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 5s;
 }
 .nav {
     text-align: right;
@@ -146,7 +146,7 @@ input[type=text], select, textarea {
     background-color: #45a049;
   }
   
-  .form {
+  div.form {
     /* border-radius: 5px; */
     background-color: blanchedalmond;
     padding: 20px;
@@ -154,6 +154,10 @@ input[type=text], select, textarea {
     height: 120vh;
     padding-left: 0;
     padding-right: 0;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 5s;
   }
 
   /* GOOGLE MAPS */
@@ -190,6 +194,10 @@ input[type=text], select, textarea {
     background-color: blanchedalmond;
     height: 300vh;
     padding-top: 5%;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 5s;
 }
 
 .portimg {
@@ -323,4 +331,18 @@ div.form {
   p {
     font-size: 22px;
   }
+}
+
+/* CSS ANIMATION */
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: blanchedalmond;}
+  to {background-color: gray;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: blanchedalmond;}
+  to {background-color: gray;}
 }
