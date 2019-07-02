@@ -258,10 +258,15 @@ input[type=text], select, textarea {
   }
 .portfolio {
   margin-right: 200px;
+  width: 68%;
   }
 div.form {
-  margin-right: 200px;
-  margin-left: 0;
+  width: 68%;
+  position: relative;
+  left: 0;
+ }
+ div.container{
+   justify-content: start;
  }
 }
 
@@ -289,7 +294,8 @@ div.form {
     padding-top: 2.5%;
   }
   div.form {
-    margin-right: 0;
+    position: relative;
+    width: 100%;
    }
 }
 
@@ -319,7 +325,6 @@ div.form {
     flex-direction: row;
     flex-wrap: wrap;
     height: 400vh;
-    width: 100%;
   }
   div.portimg {
     width: 100%;
@@ -327,6 +332,7 @@ div.form {
   }
   div.form {
     margin-left: 0px;
+    width: 100%
   }
   p {
     font-size: 22px;
